@@ -48,8 +48,8 @@ mean,std=norm.fit(counts_per_minute)
 plt.figure(1)
 bins=np.arange(minCountsPerMinute,maxCountsPerMinute,5)
 print("bins pre-patch CPM:", bins)
-if bins  < 2: 
-  bins = 2
+if len(bins)  < 2: 
+  bins = [1, 2, 3, 4, 5]
 print("bins post-patch CPM:", bins)
 plt.hist(counts_per_minute, bins = bins, histtype = 'step', linestyle=('solid'), linewidth=3, color='blue')
 plt.grid()
@@ -88,10 +88,10 @@ f.close()
 # Make a histogram of the event time from start of run
 plt.figure(2)
 bins=np.arange(0.,max_minutes,1)
-print("bins pre-patch MM:", bins)
-if bins  < 2: 
-  bins = 2
-print("bins post-patch MM:", bins)
+print("bins pre-patch CPM:", bins)
+if len(bins)  < 2: 
+  bins = [1, 2, 3, 4, 5]
+print("bins post-patch CPM:", bins)
 plt.hist(time_minutes, bins = bins, histtype = 'step', linestyle=('solid'), linewidth=3, color='blue')
 plt.grid()
 plt.title('Time distribution of counts throughout run')
@@ -103,10 +103,10 @@ plt.savefig("/home/pi/150/data/Run"+sys.argv[1]+"/timedist.png")
 # Make a histogram of the time between events
 plt.figure(3)
 bins=np.arange(0.,max_time_btwn_events,0.1)
-print("bins pre-patch MTBE:", bins)
-if bins  < 2: 
-  bins = 2
-print("bins post-patch MTBE:", bins)
+print("bins pre-patch CPM:", bins)
+if len(bins)  < 2: 
+  bins = [1, 2, 3, 4, 5]
+print("bins post-patch CPM:", bins)
 plt.hist(time_btwn_events, bins = bins, histtype = 'step', linestyle=('solid'), linewidth=3, color='blue')
 plt.grid()
 plt.title('Live time between events')
