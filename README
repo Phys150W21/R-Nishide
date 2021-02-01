@@ -1,0 +1,30 @@
+# Setup Instructions 
+
+Github can be used to backup your whole 150 directory, so that we can collaborate for debugging and analysis purposes. 
+
+git is a computer language that works from a linux terminal. So this will make it easier to transfer code in and out of the pi, and to work together.
+
+
+This also means you can copy code in and out of your github and into your pi. So you can write analysis scripts in whatever IDE you are used to, and then upload to your github, then pull that from your pi easily. 
+## Important Features 
+
+Repository: Collection of all your files and folders. Each person has a repository for themselves. 
+
+Branch: A repository can be branched so that multiple people are working on code from the same origin. The branches can be merged so that changes are reflected in the "main" branch, or the origin.
+
+Commit: Commit changes to code
+
+Pull request: Ask collaborators to look at this code 
+
+Patch: Change this part of code 
+
+## To set up 
+
+Please email me your github user-name if you want to use this so I can add you as a collaborator. 
+
+First, from /home/pi/150 run (of course replacing with the url for you repository)
+
+<pre><code>
+git clone https://github.com/Phys150W21/FirstInitial-LastName
+</code></pre>
+
