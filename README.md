@@ -2,10 +2,11 @@
 
 Github can be used to backup your whole 150 directory, so that we can collaborate for debugging and analysis purposes. 
 
-git is a computer language that works from a linux terminal. So this will make it easier to transfer code in and out of the pi, and to work together.
+git is another language that works from a linux terminal. So this will make it easier to transfer code in and out of the pi, and to work together. It will also work from your mac. I am not sure how to use git in a command line from windows. You can also just upload straight to the online github platform. 
 
 
 This also means you can copy code in and out of your github and into your pi. So you can write analysis scripts in whatever IDE you are used to, and then upload to your github, then pull that from your pi easily. 
+
 ## Important Features 
 
 Repository: Collection of all your files and folders. Each person has a repository for themselves. 
