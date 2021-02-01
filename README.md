@@ -37,21 +37,22 @@ Next, copy your 150 file into the new directory that you got by cloning.
 
 Now you have your git repo mirrored in your terminal. 
 
-To add code to your git repo or update, copy your 150 folder into the git folder to make sure it is up to date. Then you will need to bring the git folder to the stage. Next you will push the specific file or files you want to update. Finally, you will commit the file. 
+To add code to your git repo or update, copy your 150 folder into the git folder to make sure it is up to date. You will also need to make sure your git repo local to the pi is a mirror of the online version before making a new remote commit.  Then you will need to bring the git folder to the stage. Next you will push the specific file or files you want to update. Finally, you will commit the file. 
 <pre><code>cp -r ./150 ./FirstInitial-LastName
 git add ./FirstInitial-LastName
 cd ./FirstInitial-LastName
+git pull 
 git commit -m ./my-file
 git push origin main
 </code></pre>
 
 This will commit your file to main. Now your online github will have the code from your pi. 
 
-### Get code from online github onto pi 
+### Update Pi Git Repo to reflect online changes
 
-This is just the reverse. You can just reclone the whole github repo to update the git folder in your pi:
+To update your
 
-<pre><code>git clone https://github.com/Phys150W21/FirstInitial-LastName
+<pre><code>git pull
 </code></pre>
 
 Now the code you collaborated on from the online github, or that you uploaded to your repo from an IDE is on your pi in the git folder. 
