@@ -40,6 +40,7 @@ Now you have your git repo mirrored in your terminal.
 To add code to your git repo or update, copy your 150 folder into the git folder to make sure it is up to date. Then you will need to bring the git folder to the stage. Next you will push the specific file or files you want to update. Finally, you will commit the file. 
 <pre><code>cp -r ./150 ./FirstInitial-LastName
 git add ./FirstInitial-LastName
+cd ./FirstInitial-LastName
 git commit -m ./my-file
 git push origin main
 </code></pre>
